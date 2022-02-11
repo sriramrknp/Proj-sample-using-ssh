@@ -1,0 +1,379 @@
+/* style sheet of css for resume html. */
+/* 24/01/2022. */
+
+/* body style. */
+body{
+    /* background: linear-gradient(to bottom, pink, lightblue); */
+    /* background-color: pink; */
+    background-color: whitesmoke;
+    font-size: 2em;
+    margin: 0;
+    text-align: center; 
+    /* text-align: justify; */
+    font-family: sans-serif;
+   /* border: 1px solid black;*/
+}
+
+/* Head image style. */
+.top-img {
+    border-radius: 0px;
+    float: left;
+    height: 450px;
+    width: 100%;
+}
+
+/* top bar. */
+.top{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content:  end; 
+}
+
+/* college div. */
+.college {
+    text-align: center;
+    /* padding: 20px; */
+    padding-top: 80px;
+    padding-right: 40px;
+    margin: 20px; 
+    align-content: left;
+}
+
+/* about div. */
+.about {
+    text-align: center;
+    /* padding: 20px; */
+    padding-top: 80px;
+    padding-right: 40px;
+    margin: 20px;
+    align-content: right;
+}
+
+/* college link style. */
+.college-org:link {
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 100%;
+    color: darkgrey;
+}
+
+/* about link style. */
+.about-org:link {
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 100%;
+    color: darkgrey;
+}
+
+/* college link after visited */
+.college-org:visited {
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 100%;
+    color: darkgrey;
+}
+
+/* about link after visited */
+.about-org:visited {
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 100%;
+    color: darkgrey;
+}
+
+/* line after menu bar */
+.line {
+    /* transform:translate(12.5%); */
+
+    margin-top: 350px;
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+/* owner profile. */
+.my-pic {
+    float: left;
+    border-radius: 300px;
+    width: 50%;
+}
+
+/* quote. */
+.quote {
+    font-family: 'Comforter', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 150%;
+    margin: 2%;
+    padding: 5%;
+}
+
+/* My info. */
+.paragraph {
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    margin: 2%;
+    padding: 5%;
+}
+
+/* div of resume buttons. */
+.heading{
+    height: 400px;
+    margin:10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+/* resume link. */
+.resume {
+    color: black;
+    text-decoration: none;
+    font-family: 'Comforter', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 130%;
+}
+/* resume link after hover */
+.resume:hover {
+    color: white;
+}
+
+/* tech gad link */
+.tgad {
+    color: white;
+    text-decoration: none;
+    font-family: 'Comforter', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 130%;
+}
+/* tech gad after hover */
+.tgad:hover {
+    color:  rgb(143, 177, 179);
+}
+
+/* daily routine link. */
+.drot {
+    color: black;
+    text-decoration: none;
+    font-family: 'Comforter', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 130%;
+}
+/* daily routine link hover style */
+.drot:hover {
+    color: white;
+}
+
+/* books link */
+.book {
+    color: white;
+    text-decoration: none;
+    font-family: 'Comforter', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 130%;
+}
+/* books link hover style. */
+.book:hover {
+   /* color: yellow; */
+    color: rgb(212, 84, 30); 
+}
+
+.vedio {
+    background-repeat: no-repeat;
+    /* height: 300px;*/
+    width: 100%; 
+    float: none;
+    border-radius: 20px;
+}
+@media (max-width: 100%) {
+    .video { display: none; }
+    body {
+      background: url("../3rdParty/backround-resume.png") no-repeat;
+      background-size: cover;
+    }
+}
+
+/* resume button. */
+.bt-1{
+    margin: 5%;
+    padding: 5%;
+    background-image: url("../3rdParty/backround-resume.png");
+    background-repeat: no-repeat;
+    background-size: 700px 300px;
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.2s;
+    align-content: center;
+    font-size: 150%;
+}
+
+/* tech gad link button */
+.bt-2{
+    margin: 5%;
+    padding: 5%;
+    background-image: url("../3rdParty/backround\ gaming.png");
+    background-repeat: no-repeat;
+    background-size: 600px 250%;
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.2s;
+    align-content: center;
+    font-size: 150%;
+}
+
+ /* daily routine link button */
+.bt-3{
+    margin: 5%;
+    padding: 5%;
+    background-image: url("../3rdParty/backround-sunset.png");
+    background-repeat: no-repeat;
+    background-size: 700px 300px;
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.2s;
+    align-content: center;
+    font-size: 150%;
+}
+
+/*  books link button*/
+.bt-4{
+    margin: 5%;
+    padding: 5%;
+    background: url("../3rdParty/backround-girl-in-sea2.png");
+    background-repeat: no-repeat;
+    background-size: 700px 300px;
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.2s;
+    align-content: center;
+    font-size: 150%;
+}
+
+/* buttons after hover style */
+.bt-1:hover {
+    color: white;
+    transform: scale(1.2);
+}
+.bt-2:hover {
+    color: white;
+    transform: scale(1.2);
+}
+.bt-3:hover {
+    color: white;
+    transform: scale(1.2);
+}
+.bt-4:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* connect me style. */
+.connect {
+    padding-top: 40px;
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+}
+
+/* div of social site links */
+.links{
+    display: flex;
+    background: rgb(194, 176, 128);
+    border-radius: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: 100px;
+}
+
+/*
+.space {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+*/
+/*
+#back-img{
+    height: 400px;
+    width: 50%;
+    margin: 20px;
+    background: url("../3rdParty/Lamborghini-Aventador-lp700-1-2560x1600.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20%; 
+}*/
+
+/* logo links */
+.insta{
+    height: 60px;
+    width: 60px;
+    /* margin: 10px; */
+    padding: 10px;
+    margin: 10px; 
+    transition: transform 0.2s;
+    padding-left: 10px; 
+    border-radius: 20px
+}
+.twitter{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    transition: transform 0.2s;
+    /* margin: 10px; */
+    border-radius: 20px;
+}
+.linkedin{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    margin: 10px;
+    padding-left: 10px;
+    transition: transform 0.2s;
+    /* margin: 10px; */
+    border-radius: 20px;
+}
+.github{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    /* margin: 10px; */
+    padding: 10px;
+    transition: transform 0.2s;
+    padding-left: 10px;
+    border-radius: 20px
+}
+
+/* logo hover animation */
+.insta:hover {
+    transform: scale(1.4);
+}
+.twitter:hover {
+    transform: scale(1.4);
+}
+.linkedin:hover {
+    transform: scale(1.4);
+}
+.github:hover {
+    transform: scale(1.4);
+}
+
+
+.copyright {
+    margin: 25px 25px;
+    font-family: 'Comforter', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 90%;
+}

@@ -1,0 +1,62 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+template <typename T>
+
+vector<T> findLargest(int start, int end, vector<T> arr, int n)
+{
+    if (start == end)
+    {
+        // Initialize an empty list
+        vector<T> compared(n, 0);
+        compared[0] = 1;
+        compared[1] = arr[start];
+        return compared;
+    }
+
+    vector<T> compared1 = findLargest<T>(start, (start + end) / 2, arr, n);
+
+    vector<T> compared2 = findLargest<T>((start + end) / 2 + 1, end, arr, n);
+
+    if (compared1[1] > compared2[1])
+    {
+        int k = compared1[0] + 1;
+
+        compared1[0] = k;
+
+        compared1[k] = compared2[1];
+
+        return compared1;
+    }
+    else
+    {
+        int k = compared2[0] + 1;
+        compared2[0] = k;
+        compared2[k] = compared1[1];
+
+        return compared2;
+    }
+}
+
+// Function to print the second largest
+// element in the array arr[]
+template <typename S>
+void findSecondLargest(int end, vector<S> arr)
+{
+
+    // Find the largest element in arr[]
+    vector<S> compared1 = findLargest<S>(
+        0, end - 1, arr, end);
+
+    cout << "The largest element is: " << compared1[1] << endl;
+    // Find the second largest element
+    // in arr[]
+    vector<S> compared2 = findLargest<S>(2, compared1[0] + 2,
+                                         compared1,
+                                         compared1[0]);
+
+    // Print the second largest element
+    cout << "The second largest element is: " << compared2[1] << endl;
+}

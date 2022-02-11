@@ -1,0 +1,46 @@
+/* style sheet of about */
+
+#body{
+    font-size: 2rem;
+    background: whitesmoke;
+}
+
+.home {
+    padding: 25px;
+    width: 95%;
+    text-align: end;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.home-div {
+    height: 100px;
+    text-align:right;
+    background: rgb(194, 176, 128);
+    border-radius: 5px;
+}
+
+.para-about {
+    background-color: yellow;
+    margin: 2%;
+}
+
+.para {
+    background-color: aliceblue;
+}
+
+.img {
+    border-radius: 20px;
+    width: 100%;
+}
+.div-img {
+    margin: 2%;
+    border: 20px;
+}
+
+.heading {
+    margin: 3%;
+}
